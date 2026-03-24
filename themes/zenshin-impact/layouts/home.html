@@ -1,0 +1,8 @@
+{{ define "main" }}
+  {{ .Content }}
+  {{ range where site.RegularPages "Params.unlisted" "!=" true }}
+    <section>
+      <h2 ><a href="{{ .RelPermalink }}" id="post-title">{{ .LinkTitle }}</a></h2>
+    </section>
+  {{ end }}
+{{ end }}
