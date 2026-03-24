@@ -78,3 +78,7 @@ title = " zen's blog "
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+
+[services]
+  [services.googleAnalytics]
+    id = 'G-9DZBND55CZ'
