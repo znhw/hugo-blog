@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <p id="post-date">{{ .Date | time.Format ":date_medium" }}</p>
+
+  <h1>{{ .Title }}</h1>
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  <hr>
+
+  {{ partial "share-btn.html" . }}
+
+  <hr>
+
+  {{ .Content }}
+{{ end }}
