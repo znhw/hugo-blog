@@ -1,5 +1,24 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://zensblog.vercel.app/'
 languageCode = 'en-us'
 title = "zen's blog"
 theme = 'zenshin-impact'
+enableRobotsTXT = true
+
+[markup]
+    [markup.highlight]
+        codeFences = true 
+        guessSyntax = false 
+        lineNos = false 
+        noClasses = false
+
+[[menus.main]]
+name = '𖠿'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'About me'
+pageRef = '/about'
+weight = 20
+
 

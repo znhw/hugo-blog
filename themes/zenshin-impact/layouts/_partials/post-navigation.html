@@ -1,0 +1,16 @@
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $posts = where $posts "Params.unlisted" "!=" true }}
+
+<nav class="post-navigation" aria-label="Post navigation">
+    {{ with $posts.ByDate.Reverse.Prev . }}
+        <a class="post-nav-prev" href="{{ .RelPermalink }}">
+            ← {{ .Title }}
+        </a>
+    {{ end }}
+
+    {{ with $posts.ByDate.Reverse.Next . }}
+        <a class="post-nav-next" href="{{ .RelPermalink }}">
+            {{ .Title }} →
+        </a>
+    {{ end }}
+</nav>

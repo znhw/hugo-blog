@@ -134,3 +134,30 @@ button {
 .shareButton {
   display: none;
 }
+
+.socialButtons, .socialButtons ul {
+  margin: 0.25rem 0; 
+  align-items: center;
+}
+.socialButtons span {
+  color: var(--text-color);
+}
+.socialButtons ul li {
+  list-style: none; 
+  margin: 0;
+}
+.socialButtons ul li a {
+  margin: 0 0.5rem; 
+  display: block;
+}
+.socialButtons ul li:first-child a {
+  margin: 0 0.2rem 0 0.5rem;
+}
+.socialButtons ul li a svg {
+  width: auto; 
+  height: 1.1rem; 
+  display: block;
+}
+.will-change {
+  transition: 250ms;
+} 

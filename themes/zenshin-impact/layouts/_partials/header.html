@@ -4,20 +4,7 @@
 </div>
 
 <nav>
-    <ul >
-        <li> 
-            <a href="/">
-                <button id="home-icon">
-                    𖠿
-                </button>
-            </a>
-        </li>
-    
-        <li>
-            <a href="/about"><button>About me </button></a> 
-
-        </li>
-    </ul>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </nav>
 
 

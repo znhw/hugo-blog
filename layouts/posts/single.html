@@ -1,5 +1,7 @@
 {{ define "main" }}
-  <p id="post-date">{{ .Date | time.Format ":date_medium" }}</p>
+  <p id="post-date">
+    {{ .Date | time.Format ":date_medium" }} · {{ .ReadingTime }} min read
+  </p>
 
   <h1>{{ .Title }}</h1>
 
@@ -12,4 +14,6 @@
   <hr>
 
   {{ .Content }}
+
+  {{ partial "post-navigation.html" . }}
 {{ end }}
