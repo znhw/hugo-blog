@@ -1,12 +1,31 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range where site.RegularPages "Section" "posts"}}
-    <section>
-      <h2 >
-        <a href="{{ .RelPermalink }}" id="post-title">
-          {{ .LinkTitle }}
-        </a>
-      </h2>
-    </section>
+  <div class="home-intro">
+    {{ .Content }}
+  </div>
+  <div class="post-grid">
+    {{ range where site.RegularPages "Section" "posts"}}
+    <article class="post-card post-card--{{ .Params.cardColor | default "grey" }}"
+      {{ with .Params.image }}
+        style="--card-image: url('{{ . | relURL }}');"
+      {{ end }}
+    >
+      <a href="{{ .RelPermalink }}" class="post-card__link{{ with .Params.image }} post-card__link--image{{ end }}">
+        <time class="post-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "02 Jan 2006" }}
+        </time>
+        <div class="post-card__content">
+          <h2 class="post-card__title">
+            {{ .LinkTitle }}
+          </h2>
+
+          {{ with .Description }}
+            <p class="post-card__description">
+              {{ . }}
+            </p>
+          {{ end }}
+        </div>
+      </a>
+    </article>
   {{ end }}
+  </div>
 {{ end }}

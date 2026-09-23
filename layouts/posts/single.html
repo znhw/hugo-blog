@@ -1,19 +1,21 @@
 {{ define "main" }}
-  <p id="post-date">
-    {{ .Date | time.Format ":date_medium" }} · {{ .ReadingTime }} min read
-  </p>
+  <article class="post-content">
+     <p id="post-date">
+      {{ .Date | time.Format ":date_medium" }} · {{ .ReadingTime }} min read
+    </p>
+    <h1>{{ .Title }}</h1>
 
-  <h1>{{ .Title }}</h1>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <hr>
 
-  <hr>
+    {{ partial "share-btn.html" . }}
 
-  {{ partial "share-btn.html" . }}
+    {{ .Content }}
 
-  <hr>
+    {{ partial "post-navigation.html" . }}
 
-  {{ .Content }}
+  </article>
 
-  {{ partial "post-navigation.html" . }}
+
 {{ end }}
