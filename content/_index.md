@@ -4,7 +4,8 @@ title = 'Home'
 +++
 
 # zenshin 前進 
-moving forward
+
+<span class="home-intro__meaning">moving forward</span>
 
 A record of things learned, built, and lived. 
 
