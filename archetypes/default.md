@@ -1,8 +1,9 @@
 +++
 title = '{{ replace .File.ContentBaseName `-`  ` `| title }}'
 date = '{{ .Date }}'
-description: ""
+description = ""
 tags = []
 draft = true 
 unlisted = false
+cardColor = ''
 +++

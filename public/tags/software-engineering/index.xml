@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on zen&#39;s blog</title>
+    <link>http://localhost:1313/tags/software-engineering/</link>
+    <description>Recent content in Software Engineering on zen&#39;s blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2026 16:49:29 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building A Retrieval System: Keywords vs. Natural Language</title>
+      <link>http://localhost:1313/posts/keyword-vs-semantic-retrieval/</link>
+      <pubDate>Mon, 28 Sep 2026 16:49:29 +0800</pubDate>
+      <guid>http://localhost:1313/posts/keyword-vs-semantic-retrieval/</guid>
+      <description>&lt;p&gt;Imagine a foreign tourist who speaks limited English coming up, making a few hand gestures, and saying: “Train. Airport.”&lt;/p&gt;&#xA;&lt;p&gt;You understand both words, but do you know what he wants to convey? He could be asking where to catch the train to the airport, when the next train leaves, or simply whether a train to the airport exists.&lt;/p&gt;&#xA;&lt;p&gt;This short interaction highlights the fundamental challenge of building a text search engine: keywords carry specific terms, but they omit intent and context.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
