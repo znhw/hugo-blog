@@ -90,6 +90,15 @@
   
   
     <section>
+      <h2><a href="/posts/llm-as-judge-contextual-evaluation/">LLM-as-Judge For Contextual Evaluation</a></h2>
+      <p>In my previous post, I documented moving from fuzzy keyword search (Fuse.js) to semantic vector search (all-MiniLM-L6-v2 + LanceDB). The upgrade felt huge: vector search looks past literal character matches to find conceptual intent.</p>
+<p>However, as I ran deeper tests with emotional user inputs, I ran into a boundary that vector search cannot cross on its own: <strong>vector search evaluates distance, not appropriateness</strong>.</p>
+<h2 id="the-boundary-vector-search-is-a-mirror">The Boundary: Vector Search is a Mirror</h2>
+<p>At their core, transformer-based Large Language Models aren&rsquo;t just text generators. Their fundamental power lies in <strong>context processing and pattern recognition:</strong> analyzing relationships, organizing unstructured information, and evaluating constraints across high-dimensional token representations.
+When developers build with LLMs, the default pattern is almost always text generation. But when building a retrieval-backed app (like an anime quote finder), generation introduces severe tradeoffs:</p>
+    </section>
+  
+    <section>
       <h2><a href="/posts/keyword-vs-semantic-retrieval/">Building A Retrieval System: Keywords vs. Natural Language</a></h2>
       <p>Imagine a foreign tourist who speaks limited English coming up, making a few hand gestures, and saying: “Train. Airport.”</p>
 <p>You understand both words, but do you know what he wants to convey? He could be asking where to catch the train to the airport, when the next train leaves, or simply whether a train to the airport exists.</p>

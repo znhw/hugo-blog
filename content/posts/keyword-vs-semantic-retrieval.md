@@ -3,7 +3,7 @@ title = 'Building A Retrieval System: Keywords vs. Natural Language'
 date = '2026-09-28T16:49:29+08:00'
 description = "Comparing fuzzy search and semantic retrieval using Fuse.js, MiniLM, and LanceDB."
 tags = ["Software Engineering", "Search"]
-draft = true 
+draft = false 
 unlisted = false
 cardColor = 'blue'
 +++

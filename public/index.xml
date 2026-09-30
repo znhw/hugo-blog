@@ -6,8 +6,15 @@
     <description>Recent content in Home on zen&#39;s blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2026 16:49:29 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 13:30:19 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLM-as-Judge For Contextual Evaluation</title>
+      <link>http://localhost:1313/posts/llm-as-judge-contextual-evaluation/</link>
+      <pubDate>Wed, 30 Sep 2026 13:30:19 +0800</pubDate>
+      <guid>http://localhost:1313/posts/llm-as-judge-contextual-evaluation/</guid>
+      <description>&lt;p&gt;In my previous post, I documented moving from fuzzy keyword search (Fuse.js) to semantic vector search (all-MiniLM-L6-v2 + LanceDB). The upgrade felt huge: vector search looks past literal character matches to find conceptual intent.&lt;/p&gt;&#xA;&lt;p&gt;However, as I ran deeper tests with emotional user inputs, I ran into a boundary that vector search cannot cross on its own: &lt;strong&gt;vector search evaluates distance, not appropriateness&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-boundary-vector-search-is-a-mirror&#34;&gt;The Boundary: Vector Search is a Mirror&lt;/h2&gt;&#xA;&lt;p&gt;At their core, transformer-based Large Language Models aren&amp;rsquo;t just text generators. Their fundamental power lies in &lt;strong&gt;context processing and pattern recognition:&lt;/strong&gt; analyzing relationships, organizing unstructured information, and evaluating constraints across high-dimensional token representations.&#xA;When developers build with LLMs, the default pattern is almost always text generation. But when building a retrieval-backed app (like an anime quote finder), generation introduces severe tradeoffs:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building A Retrieval System: Keywords vs. Natural Language</title>
       <link>http://localhost:1313/posts/keyword-vs-semantic-retrieval/</link>
