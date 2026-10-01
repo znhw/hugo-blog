@@ -5,7 +5,7 @@ description = "Comparing fuzzy search and semantic retrieval using Fuse.js, Mini
 tags = ["Software Engineering", "Search"]
 draft = false 
 unlisted = false
-cardColor = 'blue'
+cardColor = 'orange'
 +++
 
 Imagine a foreign tourist who speaks limited English coming up, making a few hand gestures, and saying: “Train. Airport.” 

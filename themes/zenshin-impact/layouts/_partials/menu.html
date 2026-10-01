@@ -14,6 +14,7 @@ Renders a menu for the given menu ID.
   <nav>
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+      <a href="{{ "index.xml" | relURL }}">RSS</a>
     </ul>
   </nav>
 {{- end }}

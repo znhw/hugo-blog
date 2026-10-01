@@ -1,33 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
 :root {
-  --card-grey: #e8e8e5;
-  --card-blue: #c8d8e8;
-  --card-yellow: #eee9b7;
-  --card-orange: #e49a68;
-  --card-green: #9fc9a7;
-  --card-pink: #dfbdc5;
+  --card-black: #000000;
+  --card-orange: #E69F00;
+  --card-light-blue: #56B4E9;
+  --card-green: #009E73;
+  --card-yellow: #F0E442;
+  --card-dark-blue: #0072B2;  
+  --card-dark-orange: #D55E00;
+  --card-pink: #CC79A7;
   --button-text-color: rgb(39, 39, 249);
 }
 
-.post-card--grey .post-card__link {
-  background-color: var(--card-grey);
-}
-
-.post-card--blue .post-card__link {
-  background-color: var(--card-blue);
-}
-
-.post-card--yellow .post-card__link {
-  background-color: var(--card-yellow);
+.post-card--black .post-card__link {
+  background-color: var(--card-black);
 }
 
 .post-card--orange .post-card__link {
   background-color: var(--card-orange);
 }
 
+.post-card--light-blue .post-card__link {
+  background-color: var(--card-light-blue);
+}
+
 .post-card--green .post-card__link {
   background-color: var(--card-green);
+}
+
+.post-card--yellow .post-card__link {
+  background-color: var(--card-yellow);
+}
+
+.post-card--dark-blue .post-card__link {
+  background-color: var(--card-dark-blue);
+}
+
+.post-card--dark-orange .post-card__link {
+  background-color: var(--card-dark-orange);
 }
 
 .post-card--pink .post-card__link {
@@ -41,8 +51,8 @@ html {
 
 /* Dark theme styles applied when the data-theme attribute is "dark" */
 [data-theme="dark"] {
-  --bg-color: #2f2f2f;
-  --text-color: #cecece;
+  --bg-color: #202020;
+  --text-color: #ededed;
   --btn-bg: #c1c1c1;
   --btn-text: #000000;
   --link-color: #f5f5f5;
@@ -272,6 +282,11 @@ nav ul li {
   padding: 1.4rem;
   color: #111;
   text-decoration: none;
+  background-color: rgb(240, 235, 235);
+  border-color: rgb(18, 18, 18);
+  border-width: 1px;
+  border-style: solid;
+
 }
 
 .post-card__link--image {

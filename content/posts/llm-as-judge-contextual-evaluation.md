@@ -5,7 +5,7 @@ description = ""
 tags = ['Software Engineering', 'LLM']
 draft = false 
 unlisted = false
-cardColor = 'orange'
+cardColor = 'dark-orange'
 +++
 
 In my previous post, I documented moving from fuzzy keyword search (Fuse.js) to semantic vector search (all-MiniLM-L6-v2 + LanceDB). The upgrade felt huge: vector search looks past literal character matches to find conceptual intent.
