@@ -1,6 +1,6 @@
-baseURL = 'https://zensblog.vercel.app/'
+baseURL = 'https://zenshin.blog'
 languageCode = 'en-us'
-title = "zen's blog"
+title = "Zenia Hew | zenshin "
 theme = 'zenshin-impact'
 enableRobotsTXT = true
 
