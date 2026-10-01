@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
 :root {
   --card-grey: #e8e8e5;
   --card-blue: #c8d8e8;
@@ -53,7 +55,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-  font-family: sans-serif;
+  font-family: "Scope One", serif;
   width: min(1200px, 100%);
   margin: auto;
 }
@@ -118,7 +120,7 @@ section h2{
 }
 
 p, button, a, time {
-  font-family: "Source Code Pro", monospace;
+  /* font-family: "Source Code Pro", monospace; */
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -133,7 +135,7 @@ footer {
   margin-top: 5rem;
 }
 
-a, button {
+a {
   color: blue;
   text-decoration: none;
 }
@@ -169,6 +171,9 @@ nav ul li {
 
 button {
   cursor: pointer;
+  a {
+    background-color: transparent;
+  }
 }
 
 #share-icon {
@@ -275,13 +280,13 @@ button {
   font-family: "Space Grotest", sans-serif;
   /* font-size: clamp(1.15rem, 1.7vw, 1.6rem); */
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1.2;
 }
 
 .post-card__description {
   margin: 0.75rem 0 0;
-  font-size: 0.7rem;
-  line-height: 1.35rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
 }
 
 .post-content {

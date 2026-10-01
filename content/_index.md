@@ -5,7 +5,7 @@ title = 'Home'
 
 # zenshin 前進 
 
-<span class="home-intro__meaning">moving forward</span>
+*Japanese (n. / v.) - <span class="home-intro__meaning">moving forward</span>*
 
 A record of things learned, built, and lived. 
 
